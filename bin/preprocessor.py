@@ -5,7 +5,7 @@
 # @Email   : houjp1992@gmail.com
 
 
-import ConfigParser
+import configparser
 import random
 import re
 
@@ -160,7 +160,7 @@ class TextPreProcessor(object):
 class DataPreprocessor(object):
 
     def __init__(self, config_fp):
-        self.config = ConfigParser.ConfigParser()
+        self.config = configparser.ConfigParser()
         self.config.read(config_fp)
 
     @staticmethod
